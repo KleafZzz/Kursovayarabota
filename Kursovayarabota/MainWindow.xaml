@@ -6,7 +6,19 @@
         xmlns:local="clr-namespace:Kursovayarabota"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        
+    <Grid Background="white">
+        <StackPanel VerticalAlignment="Center"
+            Width="200"
+                    HorizontalAlignment="Center">
+            <TextBlock Text="Login"/>
+            <TextBox Name="TxLogin"/>
+            <TextBlock Text="Password"/>
+            <TextBox Name="TxPassword"/>
+
+            <Button Height="20"
+                    Margin="5"
+                    Click="btnSignin_click"
+                    Content="войти"/>
+        </StackPanel>
     </Grid>
 </Window>
